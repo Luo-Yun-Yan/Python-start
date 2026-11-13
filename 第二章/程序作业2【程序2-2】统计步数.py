@@ -1,0 +1,14 @@
+#课本示范
+name=input('请输入昵称:')
+mon,tue,wed,thu,fri,sat,sun=input('请输入一个星期之内的步数,并用空格分开使其一一对应(星期一~星期日):').split()
+avg_1=sum([float(mon),float(tue),float(wed),float(thu),float(fri),float(sat),float(sun)])/7
+max_1=max([float(mon),float(tue),float(wed),float(thu),float(fri),float(sat),float(sun)])
+print(f'{name}你好!本周平均步数:{avg_1}最多步数:{max_1}')
+print()
+#个人想法
+name=input('请输入昵称:')
+steps=map(float,input('请输入每日步数(用空格分开):').split())
+steps=list(steps)
+avg_1=sum(steps)/len(steps)
+max_1=max(steps)
+print(f'{name}你好!每日平均步数:{avg_1}最多步数:{max_1}')

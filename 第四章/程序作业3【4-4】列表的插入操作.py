@@ -1,0 +1,10 @@
+ls=['Python']
+ls.append('程序设计')
+print('append之后的ls:',ls)
+lt=ls.copy()
+print('复制之后的lt:',lt)
+lt[0]='计算机'
+print('修改之后,lt的值:',lt)
+print('修改之后,ls的值:',ls)
+ls.insert(1,'语言')
+print('插入新元素后的ls:',ls)

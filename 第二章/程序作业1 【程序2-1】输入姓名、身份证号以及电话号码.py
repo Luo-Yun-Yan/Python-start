@@ -1,0 +1,6 @@
+input_str=input('请输入姓名，身份证号码，以及电话号码等基本信息(用空格分隔):\n')
+name,idcard,tel=input_str.split(' ')
+name_new=name[0]+'*'*(len(name)-1)
+birthday='-'.join([idcard[6:10],idcard[10:12],idcard[12:14]])
+tel_new=tel.replace(tel[3:7],'****')
+print(f'姓名:{name_new} 生日:{birthday} 电话号码:{tel_new}')
