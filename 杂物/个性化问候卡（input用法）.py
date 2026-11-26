@@ -1,0 +1,6 @@
+name=input('请问你的名字是:')
+adress=input('请问你想去的地方是:')
+print('*'*16)
+print(f'你好,{name}！欢迎来到{adress}')
+print('*'*16)
+print('祝你玩得开心！再见~')
